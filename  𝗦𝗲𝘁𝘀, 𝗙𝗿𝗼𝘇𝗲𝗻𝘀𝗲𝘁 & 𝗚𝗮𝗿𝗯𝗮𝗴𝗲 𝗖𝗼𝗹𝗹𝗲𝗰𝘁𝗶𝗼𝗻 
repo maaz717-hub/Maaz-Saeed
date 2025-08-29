@@ -1,0 +1,383 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMvtKReqTdzkl0I2dLjjeAt",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/maaz717-hub/Python-Assignment/blob/main/%20%F0%9D%97%A6%F0%9D%97%B2%F0%9D%98%81%F0%9D%98%80%2C%20%F0%9D%97%99%F0%9D%97%BF%F0%9D%97%BC%F0%9D%98%87%F0%9D%97%B2%F0%9D%97%BB%F0%9D%98%80%F0%9D%97%B2%F0%9D%98%81%20%26%20%F0%9D%97%9A%F0%9D%97%AE%F0%9D%97%BF%F0%9D%97%AF%F0%9D%97%AE%F0%9D%97%B4%F0%9D%97%B2%20%F0%9D%97%96%F0%9D%97%BC%F0%9D%97%B9%F0%9D%97%B9%F0%9D%97%B2%F0%9D%97%B0%F0%9D%98%81%F0%9D%97%B6%F0%9D%97%BC%F0%9D%97%BB%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1: Create a set of 5 fruits and print it."
+      ],
+      "metadata": {
+        "id": "d8CAmQQo6VtN"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_set = {\"Mango\",\"Apple\",\"Banana\",\"Orange\",\"Grapes\"}\n",
+        "print(my_set)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "j6ZRSiJ96bOk",
+        "outputId": "a4b2ff2e-40a9-4e6b-a90e-9f192f9b5a75"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'Grapes', 'Banana', 'Orange', 'Mango', 'Apple'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2: Add one new fruit to your set using .add() and print the updated set."
+      ],
+      "metadata": {
+        "id": "hUWS12AD_WfA"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_set = {\"Mango\",\"Apple\",\"Banana\",\"Orange\",\"Grapes\"}\n",
+        "my_set.add(\"watermelon\")\n",
+        "print(my_set)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2nacur2M_bwg",
+        "outputId": "12ec840b-f952-4264-f77f-b12666bb6ea2"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'Grapes', 'Banana', 'Orange', 'Mango', 'Apple', 'watermelon'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "3: Remove an existing fruit using .remove() (and explain if it errors when missing)."
+      ],
+      "metadata": {
+        "id": "ze5iYUTH_5aA"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_set = {\"Mango\",\"Apple\",\"Banana\",\"Orange\",\"Grapes\"}\n",
+        "my_set.remove(\"Banana\")\n",
+        "print(my_set)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_mKdZV7pABw7",
+        "outputId": "0d11efce-3532-4d30-e5d4-0d0679303f99"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'Grapes', 'Orange', 'Mango', 'Apple'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "4: Remove another fruit using .discard() (and note the difference from .remove())."
+      ],
+      "metadata": {
+        "id": "4okr1UAOAXY4"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_set = {\"Mango\",\"Apple\",\"Banana\",\"Orange\",\"Grapes\"}\n",
+        "my_set.discard(\"Apple\")\n",
+        "print(my_set)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9nXwp3TXAW6k",
+        "outputId": "bbd6e854-b8aa-45ef-ee1f-95ce65497b39"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'Grapes', 'Banana', 'Orange', 'Mango'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "5: Use .pop() to remove an arbitrary item and print the result."
+      ],
+      "metadata": {
+        "id": "NVWAlDnKAv5Y"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_set = {\"Mango\",\"Apple\",\"Banana\",\"Orange\",\"Grapes\"}\n",
+        "removed_item = my_set.pop()\n",
+        "print(removed_item)\n",
+        "print(my_set)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ryJFVbriA0zT",
+        "outputId": "230dbbd0-1b67-4119-bec4-e6e6968979e5"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Grapes\n",
+            "{'Banana', 'Orange', 'Mango', 'Apple'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "6: Clear the remaining items using .clear() and show that the set is now empty."
+      ],
+      "metadata": {
+        "id": "pPDNUNLeBj6r"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_set = {\"Mango\",\"Apple\",\"Banana\",\"Orange\",\"Grapes\"}\n",
+        "my_set.clear()\n",
+        "print(\"Clear Set:\",my_set)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sg1bHwI9BrDc",
+        "outputId": "fc780123-a8f9-495d-cd23-7655e50391e2"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Clear Set: set()\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "7: Create two sets of numbers and display their union(), intersection(), difference(), symmetric_difference()."
+      ],
+      "metadata": {
+        "id": "yP--tgJBCh7W"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_set1 = {1,2,3,4,5}\n",
+        "my_set2 = {1,2,3,4,5,6,7}\n",
+        "print(\"Union :\" ,my_set1.union(my_set2))\n",
+        "print(\"Intersection :\" ,my_set1.intersection(my_set2))\n",
+        "print(\"Difference :\" ,my_set2.difference(my_set1))\n",
+        "print(\"symmetric_difference :\" ,my_set1.symmetric_difference(my_set2))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mwnTp51OCt6_",
+        "outputId": "18f0ef4a-2bab-4ef0-e696-a72b6bd7c13b"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Union : {1, 2, 3, 4, 5, 6, 7}\n",
+            "Intersection : {1, 2, 3, 4, 5}\n",
+            "Difference : {6, 7}\n",
+            "symmetric_difference : {6, 7}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "8: Check if one set is a subset or superset of another, and print results."
+      ],
+      "metadata": {
+        "id": "RC6lX7AdGJ3v"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_set1 = {1,2,3,4,5}\n",
+        "my_set2 = {1,2,3,4,5,6,7}\n",
+        "\n",
+        "print(\"Is set1 a subset of set2?:\", my_set1.issubset(my_set2))\n",
+        "print(\"Is set2 a superset of set1?:\", my_set2.issuperset(my_set1))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IbFPW-BSGKjj",
+        "outputId": "a4caa559-3143-439e-cf42-b383108917a5"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Is set1 a subset of set2?: True\n",
+            "Is set2 a superset of set1?: True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "9: Declare a frozenset of vowels and try adding an item — observe the immutability error."
+      ],
+      "metadata": {
+        "id": "cpJqlX0jL2Zk"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "vowels = frozenset({\"a\", \"e\", \"i\", \"o\", \"u\"})\n",
+        "print(\"Frozenset of vowels:\", vowels)\n",
+        "\n",
+        "try:\n",
+        "    vowels.add(\"y\")\n",
+        "except AttributeError as e:\n",
+        "    print(\"Error when trying to add to frozenset:\", e)"
+      ],
+      "metadata": {
+        "id": "0wT4OdCLL_Uj"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "10: Use a loop to check membership of a user-input character in the set of vowels."
+      ],
+      "metadata": {
+        "id": "mpVh4nfoMyLl"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "vowels = {\"a\", \"e\", \"i\", \"o\", \"u\"}\n",
+        "char_input = input(\"Enter a character to check if it is a vowel: \").lower()\n",
+        "\n",
+        "is_vowel = False\n",
+        "for vowel in vowels:\n",
+        "    if char_input == vowel:\n",
+        "        is_vowel = True\n",
+        "        break\n",
+        "\n",
+        "if is_vowel:\n",
+        "    print(f\"'{char_input}' is a vowel.\")\n",
+        "else:\n",
+        "    print(f\"'{char_input}' is not a vowel.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lK8lzOlgM3SG",
+        "outputId": "0cd85b4c-cbbb-489a-85c6-c6fb6d1fbb20"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a character to check if it is a vowel: f\n",
+            "'f' is not a vowel.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
